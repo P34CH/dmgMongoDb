@@ -1,0 +1,189 @@
+[
+  {
+    "_id": 2125,
+    "name": "Sokrates",
+    "rang": "C4",
+    "raum": 226,
+    "vorlesungen": [
+      {
+        "_id": 4052,
+        "titel": "Logik",
+        "sws": 4,
+        "studenten": [
+          {
+            "_id": 27550,
+            "name": "Schopenhauer",
+            "semester": 6
+          }
+        ]
+      },
+      {
+        "_id": 5041,
+        "titel": "Ethik",
+        "sws": 4,
+        "studenten": [
+          {
+            "_id": 28106,
+            "name": "Carnap",
+            "semester": 3
+          },
+          {
+            "_id": 29120,
+            "name": "Theophrastos",
+            "semester": 2
+          }
+        ]
+      },
+      {
+        "_id": 5049,
+        "titel": "Maeeutik",
+        "sws": 2,
+        "studenten": [
+          {
+            "_id": 29120,
+            "name": "Theophrastos",
+            "semester": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2126,
+    "name": "Russel",
+    "rang": "C4",
+    "raum": 232,
+    "vorlesungen": [
+      {
+        "_id": 5043,
+        "titel": "Erkenntnistheorie",
+        "sws": 3,
+        "studenten": []
+      },
+      {
+        "_id": 5052,
+        "titel": "Wissenschaftstheorie",
+        "sws": 3,
+        "studenten": [
+          {
+            "_id": 28106,
+            "name": "Carnap",
+            "semester": 3
+          }
+        ]
+      },
+      {
+        "_id": 5216,
+        "titel": "Bioethik",
+        "sws": 2,
+        "studenten": [
+          {
+            "_id": 28106,
+            "name": "Carnap",
+            "semester": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2127,
+    "name": "Kopernikus",
+    "rang": "C3",
+    "raum": 310,
+    "vorlesungen": []
+  },
+  {
+    "_id": 2133,
+    "name": "Popper",
+    "rang": "C3",
+    "raum": 52,
+    "vorlesungen": [
+      {
+        "_id": 5259,
+        "titel": "Der Wiener Kreis",
+        "sws": 2,
+        "studenten": [
+          {
+            "_id": 28106,
+            "name": "Carnap",
+            "semester": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2134,
+    "name": "Augustinus",
+    "rang": "C3",
+    "raum": 309,
+    "vorlesungen": [
+      {
+        "_id": 5022,
+        "titel": "Glaube und Wissen",
+        "sws": 2,
+        "studenten": [
+          {
+            "_id": 25403,
+            "name": "Jonas",
+            "semester": 12
+          },
+          {
+            "_id": 29555,
+            "name": "Feuerbach",
+            "semester": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2136,
+    "name": "Curie",
+    "rang": "C4",
+    "raum": 36,
+    "vorlesungen": []
+  },
+  {
+    "_id": 2137,
+    "name": "Kant",
+    "rang": "C4",
+    "raum": 7,
+    "vorlesungen": [
+      {
+        "_id": 4630,
+        "titel": "Die 3 Kritiken",
+        "sws": 4,
+        "studenten": []
+      },
+      {
+        "_id": 5001,
+        "titel": "Grundzuege",
+        "sws": 4,
+        "studenten": [
+          {
+            "_id": 26120,
+            "name": "Fichte",
+            "semester": 10
+          },
+          {
+            "_id": 27550,
+            "name": "Schopenhauer",
+            "semester": 6
+          },
+          {
+            "_id": 29120,
+            "name": "Theophrastos",
+            "semester": 2
+          },
+          {
+            "_id": 29555,
+            "name": "Feuerbach",
+            "semester": 2
+          }
+        ]
+      }
+    ]
+  }
+]
