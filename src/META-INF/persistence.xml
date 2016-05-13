@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="Uni">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>Uni.Assistenten</class>
+        <class>Uni.Professoren</class>
+        <class>Uni.Studenten</class>
+        <class>Uni.Vorlesungen</class>
+        <class>Uni.Hören</class>
+        <class>Uni.Prüfen</class>
+        <class>Uni.Voraussetzen</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/uni"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="dmg"/>
+            <property name="javax.persistence.jdbc.password" value="dmg"/>
+
+        </properties>
+    </persistence-unit>
+</persistence>
