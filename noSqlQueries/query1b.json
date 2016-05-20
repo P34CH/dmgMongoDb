@@ -1,0 +1,44 @@
+// Für jeden Professor wird die Anzahl Studenten durch die Summe aller Studenten seiner Vorlesungen berechnet.
+// Dadurch wird ein Student, welcher mehrere Vorlesungen des gleichen Professors besucht, mehrfach gezählt.
+[
+	{
+		"$project": {
+			"name": "$name",
+			"vorlesungen": "$vorlesungen",
+			"sws": {
+				"$sum": "$vorlesungen.sws"
+			}
+		}
+	},
+	{
+		"$unwind": "$vorlesungen"
+	},
+	{
+		"$project": {
+			"name": "$name",
+			"sws": "$sws",
+			"studenten": {
+				"$size": "$vorlesungen.studenten"
+			}
+		}
+	},
+	{
+		"$group": {
+			"_id": {
+				"ProfessorName": "$name",
+				"SummeSWS": "$sws"
+			},
+			"AnzahlStudenten": {
+				"$sum": "$studenten"
+			}
+		}
+	},
+	{
+		"$project": {
+			"_id": 0,
+			"ProfessorName": "$_id.ProfessorName",
+			"AnzahlStudenten": "$AnzahlStudenten",
+			"SummeSWS": "$_id.SummeSWS"
+		}
+	}
+]

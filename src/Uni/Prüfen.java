@@ -8,11 +8,12 @@ import java.math.BigDecimal;
  */
 @Entity
 @IdClass(PrüfenPK.class)
+@NamedQueries({@NamedQuery(name = "Prüfen.findAll", query = "SELECT p FROM Prüfen p")})
 public class Prüfen {
     private int matrNr;
     private int vorlNr;
     private Integer persNr;
-    private BigDecimal note;
+    private Double note;
     private Studenten studentenByMatrNr;
     private Vorlesungen vorlesungenByVorlNr;
     private Professoren professorenByPersNr;
@@ -49,11 +50,11 @@ public class Prüfen {
 
     @Basic
     @Column(name = "Note", nullable = true, precision = 1)
-    public BigDecimal getNote() {
+    public Double getNote() {
         return note;
     }
 
-    public void setNote(BigDecimal note) {
+    public void setNote(Double note) {
         this.note = note;
     }
 

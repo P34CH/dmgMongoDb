@@ -6,6 +6,7 @@ import javax.persistence.*;
  * Created by peach on 12.05.16
  */
 @Entity
+@NamedQueries({@NamedQuery(name = "Assistenten.findAll", query = "SELECT p FROM Assistenten p")})
 public class Assistenten {
     private int persNr;
     private String name;
