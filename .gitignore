@@ -1,1 +1,3 @@
 .idea
+out
+src/META-INF/persistence.xml
