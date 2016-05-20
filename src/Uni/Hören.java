@@ -7,6 +7,7 @@ import javax.persistence.*;
  */
 @Entity
 @IdClass(HörenPK.class)
+@NamedQueries({@NamedQuery(name = "Hören.findAll", query = "SELECT p FROM Hören p")})
 public class Hören {
     private int matrNr;
     private int vorlNr;

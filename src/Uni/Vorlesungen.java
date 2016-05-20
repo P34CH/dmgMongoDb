@@ -7,6 +7,7 @@ import java.util.Collection;
  * Created by peach on 12.05.16
  */
 @Entity
+@NamedQueries({@NamedQuery(name = "Vorlesungen.findAll", query = "SELECT p FROM Vorlesungen p")})
 public class Vorlesungen {
     private int vorlNr;
     private String titel;

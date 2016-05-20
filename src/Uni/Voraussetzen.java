@@ -7,6 +7,7 @@ import javax.persistence.*;
  */
 @Entity
 @IdClass(VoraussetzenPK.class)
+@NamedQueries({@NamedQuery(name = "Voraussetzen.findAll", query = "SELECT p FROM Voraussetzen p")})
 public class Voraussetzen {
     private int vorgänger;
     private int nachfolger;
